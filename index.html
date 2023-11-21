@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <h1>BURGER</h1>
+            <div class="links">
+                <ul >
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#service">Service</a></li>
+                    <li><a href="#contact">Contacts</a></li>
+                </ul>
+            </div>
+            <div class="menu">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+        </nav>
+        <div class="main1">
+            <div class="burger">
+                <img src="burger.jpg" alt="burger">
+            </div>
+            <p>A succulent symphony of flavors, a burger is a culinary masterpiece that tantalizes taste buds with its juicy, grilled patty nestled between soft, golden buns. Topped with a medley of fresh vegetables, cheese, and savory condiments, it's a handheld delight, an iconic blend of indulgence and comfort that transcends culinary boundaries.
+            </p>
+        </div>
+        <div class="main2" id="about">
+            <h2>About</h2>
+            <p>The burger, an iconic culinary creation, has become a global symbol of comfort and indulgence. Its origins can be traced back to the late 19th century, when the hamburger gained popularity in the United States. Today, it has evolved into a diverse and customizable dish that caters to a wide range of tastes and preferences. At its core, a burger typically consists of a ground meat patty, often beef, cooked to perfection and nestled between two halves of a soft, toasted bun. However, the beauty of the burger lies in its adaptability, with variations that feature everything from plant-based patties to exotic toppings.
+
+                The foundation of any great burger is the patty, and the choice of meat can greatly influence the overall flavor and texture. While beef remains the classic and most beloved option, modern culinary trends have given rise to alternatives like turkey, chicken, lamb, and even vegetarian or vegan options made from plant-based ingredients such as black beans, quinoa, or mushrooms. This diversity caters to a broad spectrum of dietary preferences and ethical considerations, ensuring that there's a burger for everyone.
+                
+                The art of burger construction extends beyond the patty, with an array of toppings that elevate the humble sandwich into a gourmet experience. From traditional lettuce, tomato, and onion to more adventurous additions like avocado, fried eggs, or pickled jalapeños, the possibilities are limited only by one's imagination. The condiments play a crucial role as well, with classic ketchup and mustard often joined by mayonnaise, barbecue sauce, or specialty aiolis, adding layers of flavor that harmonize with the other ingredients.</p>
+        </div>
+        <div class="main3" id="service">
+            <div class="head">
+                <h2>Services</h2>
+            </div>
+            <div class="content">
+                <div class="img1 img">
+                    <img src="burger1.jpg" alt="">
+                    <p>The burger, an iconic culinary creation, has become a global symbol of comfort and indulgence. Its origins can be traced back to the late 19th century, when the hamburger gained popularity in the United States.</p>
+                </div>
+                <div class="img2 img">
+                    <img src="burger2.jpg" alt="">
+                    <p>At its core, a burger typically consists of a ground meat patty, often beef, cooked to perfection and nestled between two halves of a soft, toasted bun. 
+                    </p>
+                </div>
+                <div class="img3 img">
+                    <img src="burger3.jpg" alt="">
+                    <p>The bun, a seemingly simple component, is a critical element that can make or break a burger. Soft and slightly toasted, it serves as a vessel to hold the savory contents together.</p>
+                </div>
+            </div>
+        </div>
+        <div class="main4" id="contact">
+            <h2>Contact Us</h2>
+            <form action="" method="post">
+                <div class="name">
+                    <label for="name">Name</label>
+                <input type="text" name="name" id="name" autocomplete="off">
+                </div>
+                <div class="email">
+                    <label for="email">Email</label>
+                <input type="email" name="email" id="email" autocomplete="off">
+                </div>
+                <div class="text">
+                    <label for="textarea">Comment</label>
+                <textarea name="textarea" id="text" cols="30" rows="10"></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+
+        </div>
+
+    </div>
+    <script>
+        let menu=document.querySelector('.menu')
+        let menulist=document.querySelector('nav ul')
+        menu.addEventListener('click',()=>{
+            menulist.classList.toggle('showmenu')
+        
+        })
+    </script>
+</body>
+</html>

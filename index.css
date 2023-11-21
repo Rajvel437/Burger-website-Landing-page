@@ -1,0 +1,342 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.container p{
+    padding: 15px;
+}
+body{
+    /* background-image: url("burger4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh; */
+    background:linear-gradient(to right ,red ,yellow ,green,blue,black);
+    
+}
+body h2{
+     color: white;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top:0;
+    background-color: rgba(0,0,0,0.8);
+    box-shadow: 1px 1px 5px 1px black inset;
+    box-shadow: 1px 1px 5px 1px black;
+}
+ul{
+    /* display: flex; */
+    list-style: none;
+    margin-right: 30px;
+    margin-top:18px ;
+}
+ul li{
+    display: inline-block;
+    margin: 10px;
+    margin-right: 25px;
+    font-size: 18px;
+}
+ul a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    border-bottom: 3px solid red;
+    transition: 0.2s;
+}
+nav h1{
+    margin: 20px;
+    margin-left: 30px;
+    color: orangered;
+}
+nav h1:hover{
+    cursor: pointer;
+}
+.main1{
+    display: flex;
+    margin-top: 170px;
+    margin-left: 100px;
+}
+.main1 p{
+    font-size: 22px;
+    margin-left: 30px;
+    margin-top: 70px;
+    user-select: none;
+    color: orange;
+}
+img{
+    width: 490px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 7px 1px black;
+}
+.main2 h2{
+    margin-top: 230px;
+    margin-left: 620px;
+    margin-bottom: 170px;
+}
+p{
+    text-align: justify;
+    margin-right: 10px;
+}
+.main2 p{
+     font-size: 23px;
+     margin-left: 30px;
+     margin-right: 30px;
+
+}
+
+/* .main3{
+    display: flex;
+
+} */
+.main3 img{
+    width: 350px;
+    height: 300px;
+    /* display: block; */
+}
+.head h2{
+    margin-top: 300px;
+    margin-left: 620px;
+    margin-bottom: 140px;
+}
+.content{
+    display: flex;
+    margin: 20px;
+    margin-bottom: 200px;
+    justify-content: space-around;
+    
+}
+.content p{
+    font-size: 21px;
+    margin-top: 18px;
+}
+.img1,.img2,.img3{
+    width: 350px;
+    height: 300px;
+    
+}
+.main4 h2{
+    margin-top: 300px;
+    margin-left: 620px;
+    margin-bottom: 120px;
+}
+
+form{
+    margin-left: 480px;
+    margin-bottom: 170px;
+    font-size: 21px;
+}
+form div{
+    margin: 20px;
+    
+}
+input{
+    padding: 3px;
+    width: 250px;
+    margin-left: 30px;
+    border-radius: 5px;
+    font-size: 19px;
+}
+textarea{
+    height: 100px;
+    width: 300px;
+    border-radius: 3px;
+    font-size: 19px;
+
+}
+button{
+    margin-left: 190px;
+    font-size: 19px;
+    padding: 3px;
+    width: 120px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+button:hover{
+    background-color: blue;
+    box-shadow: 1px 2px 5px 2px black inset;
+    border-radius: 4px;
+    color: white;
+
+    
+}
+h2{
+    font-size: 30px;
+}
+.menu{
+    display: none;
+    cursor: pointer;
+}
+.box{
+    width: 20px;
+    height: 3px;
+    background-color: white;
+    margin-top: 3px;
+}
+@media screen and (max-width:570px){
+    *{
+        margin: 0px;
+    }
+    .container{
+        margin: 0px;
+        
+    }
+    .container p{
+        font-size: 1.3em;
+    }
+    
+    body{
+        height: 100vh;
+        width: 100vw;
+        
+    }
+    .main1 img{
+        width: 290px;
+        height: 290px;
+        /* margin-left:60px; */
+        margin-top: 40px;
+    }
+    nav{
+        position: sticky;
+        top:    0px;
+    }
+    .main1{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .main1 p{
+        display: block;
+        /* margin-top: 40px;
+        margin-left: 10px; */
+        padding: 20px;
+        text-align: justify;
+    }
+    .main2 h2{
+        margin-left: 200px;
+    }
+    .head h2{
+        margin-left:200px;
+    }
+    .main2 h2{
+        margin-bottom: 40px;
+    }
+    .main2 p{
+        padding: 30px;
+    }
+    .content{
+        /* margin-left:30px;
+        margin-right: 10px; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .main3 h2{
+        margin-bottom: 40px;
+    }
+    .img{
+        margin-bottom: 240px;
+    }
+    .main3 .img2{
+        margin-bottom: 200px;
+    }
+    .main3 .img3{
+        margin-bottom: 200px;
+    }
+    .main4 h2{
+        margin: 80px;
+    }
+    form{
+        margin: 0;
+        font-size: 19px;
+    }
+    form input{
+        width: 220px;
+        font-size: 17px;
+        padding: 3px;
+    }
+    textarea{
+        padding: 4px;
+        width: 230px;
+        height: 100px;
+    }
+    button{
+        margin-left: 100px;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .main4{
+        padding-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 30px;
+        /* font-size: 20px; */
+    }
+    /* .links ul{
+        padding-left:0 ;
+        align-items: center;
+        flex-direction: column;
+        display: none;
+    } */
+
+    nav ul{
+        text-align: center;
+        margin-left: 30px;
+        display: none;
+        
+        /* padding-left: 0px; */
+    }
+    nav a:hover{
+        border-bottom: 2px solid red;
+    }
+    nav li{
+        display: block;
+        padding: 10px;
+        font-size: 19px;
+    }
+    .container h2{
+        color: orangered;
+        font-weight: 800;
+    }
+    nav h1{
+        font-size: 25px;
+
+        margin: 15px;
+        margin-left: 30px;
+        padding: 0;
+    }
+    .menu{
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        
+    }
+    label,input{
+        font-size: 20px;
+    }
+    .showmenu{
+        display: block;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
